@@ -33,7 +33,7 @@ jobs:
         echo "done!"
 # 上传文件并发布 Release
     - name: publish release
-    - uses: "marvinpinto/action-automatic-releases@latest"
+      uses: "marvinpinto/action-automatic-releases@latest"
       with:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "${{ env.RELEASE_VERSION }}"
